@@ -27,7 +27,7 @@ and password='" . md5($password) . "'";
         if ($rows == 1) {
             $_SESSION['username'] = $username;
             // Redirect user to index.php
-            header("Location: index.php");
+            header("Location: ./home/view.php");
         } else {
             echo "<div class='formlogin'>
 <h3>Username/password is incorrect.</h3>

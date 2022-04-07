@@ -1,6 +1,7 @@
 <?php
 require('../db.php');
 include("../auth.php");
+include("../index.html");
 function Visit($url)
 {
        $agent = "Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)";
@@ -24,10 +25,14 @@ function Visit($url)
 $sel_query = "Select id, url from website ORDER BY id asc;";
 $result = mysqli_query($con, $sel_query);
 while ($row = mysqli_fetch_assoc($result)) {
-       var_dump($row);
+       //var_dump($row);
        $url = $row["url"];
        $status = Visit($url);
        $website_id = $row["id"];
        $insert_query = "INSERT log (websiteid, statusid) VALUES ('$website_id','$status')";
-       mysqli_query($con, $insert_query); 
+       mysqli_query($con, $insert_query);
 }
+
+$status = "Websites Successfully Connected. </br></br>
+                <a href='../logs/view.php'>View Log</a>";
+echo '<p style="color:#FF0000;">' . $status . '</p>';
