@@ -39,7 +39,7 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="sidebars.css" rel="stylesheet">
+    <link href="./css/sidebars.css" rel="stylesheet">
 </head>
 
 <body>
@@ -132,24 +132,24 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./logs/" class="nav-link link-dark">
+                    <a href="./logs/view.php" class="nav-link link-dark">
                         <svg class="bi me-2" width="16" height="16">
                             <use xlink:href="#table" />
                         </svg> Log
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link link-dark">
+                    <a href="./sites/view.php" class="nav-link link-dark">
                         <svg class="bi me-2" width="16" height="16">
                             <use xlink:href="#grid" />
                         </svg> Websites
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link link-dark">
+                    <a href="./users/view.php" class="nav-link link-dark">
                         <svg class="bi me-2" width="16" height="16">
                             <use xlink:href="#people-circle" />
-                        </svg> Customers
+                        </svg> Users
                     </a>
                 </li>
             </ul>
@@ -205,7 +205,7 @@
 
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="sidebars.js"></script>
+    <script src="./css/sidebars.js"></script>
 </body>
 
 </html>

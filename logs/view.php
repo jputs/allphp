@@ -1,6 +1,7 @@
 <?php
 require('../db.php');
 include("../auth.php");
+include("../index.html");
 ?>
 <!DOCTYPE html>
 <html>
