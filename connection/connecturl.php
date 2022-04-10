@@ -33,6 +33,6 @@ while ($row = mysqli_fetch_assoc($result)) {
        mysqli_query($con, $insert_query);
 }
 
-$status = "Websites Successfully Connected. </br></br>
+$status = "<br>Websites Successfully Connected. </br></br>
                 <a href='../logs/view.php'>View Log</a>";
 echo '<p style="color:#FF0000;">' . $status . '</p>';

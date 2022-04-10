@@ -39,7 +39,7 @@ include("../index.html");
                             <?php if ($row["statusid"]) : ?>
                                 <img src="../images/ok.jpg" />
                             <?php else : ?>
-                                <img src="../images/alert.jpg" />
+                                <img src="../images/Alert.png" />
                             <?php endif; ?>
                         </td>
                         <td><?php echo $row["name"]; ?></td>
