@@ -43,7 +43,7 @@
 </head>
 
 <body>
-    <img class="mb-4" src="../images/logo.png" alt="" width="127" height="57">
+    <img class="mb-4" src="./images/logo.png" alt="" width="127" height="57">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 
         <symbol id="bootstrap" viewBox="0 0 118 94">
@@ -110,10 +110,7 @@
 
         <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
             <a href="./index.php" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                <!-- <img class="mb-4" src="../images/logo.png" alt="" width="127" height="57"> -->
-                <!-- <svg class="bi me-2" width="40" height="32">
-                    <use xlink:href="#bootstrap" />
-                </svg> -->
+
                 <span class="fs-4">R2 Upbot</span>
             </a>
             <hr>

@@ -37,7 +37,7 @@ and password='" . md5($password) . "'";
     ?>
 
         <div class="formlogin">
-            <img class="mb-4" src="../images/logo.png" alt="" width="127" height="57">
+            <img class="mb-4" src="./images/logo.png" alt="" width="127" height="57">
             <h1>Log In</h1>
             <form action="" method="post" name="login">
                 <input type="text" name="username" placeholder="Username" required />

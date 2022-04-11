@@ -1,6 +1,9 @@
 <?php
-require('db.php');
-include("auth.php");
+require('../db.php');
+include("../auth.php");
+?>
+
+<?php
 $status = "";
 if (isset($_POST['new']) && $_POST['new'] == 1) {
     $trn_date = date("Y-m-d H:i:s");
