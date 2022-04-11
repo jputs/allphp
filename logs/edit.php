@@ -3,7 +3,7 @@ require('db.php');
 include("auth.php");
 $id = $_REQUEST['id'];
 $query = "SELECT * from website where id='" . $id . "'";
-$result = mysqli_query($con, $query) or die(mysqli_error());
+$result = mysqli_query($con, $query) or die(mysql_error());
 $row = mysqli_fetch_assoc($result);
 ?>
 <!DOCTYPE html>
@@ -35,7 +35,7 @@ $row = mysqli_fetch_assoc($result);
             $update = "update new_record set trn_date='" . $trn_date . "',
 name='" . $name . "', url='" . $url . "', interval='" . $interval . "', timeout='" . $timeout . "', email='" . $email . "', 
 submittedby='" . $submittedby . "' where id='" . $id . "'";
-            mysqli_query($con, $update) or die(mysqli_error());
+            mysqli_query($con, $update) or die(mysql_error());
             $status = "Record Updated Successfully. </br></br>
 <a href='view.php'>View Updated Record</a>";
             echo '<p style="color:#FF0000;">' . $status . '</p>';

@@ -4,7 +4,7 @@ include("../auth.php");
 include("../index.html");
 $id = $_REQUEST['id'];
 $query = "SELECT * from users where id='" . $id . "'";
-$result = mysqli_query($con, $query) or die(mysqli_error());
+$result = mysqli_query($con, $query) or die(mysql_error());
 $row = mysqli_fetch_assoc($result);
 ?>
 <!DOCTYPE html>
@@ -30,7 +30,7 @@ $row = mysqli_fetch_assoc($result);
             $submittedby = $_SESSION["username"];
             $update = "update users set username='$username', email='$email'
                        where id=$id ";
-            mysqli_query($con, $update) or die(mysqli_error());
+            mysqli_query($con, $update) or die(mysql_error());
             $status = "Record Updated Successfully. </br></br>
                 <a href='view.php'>View Updated Record</a>";
             echo '<p style="color:#FF0000;">' . $status . '</p>';
